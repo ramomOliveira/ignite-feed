@@ -1,12 +1,21 @@
 import Header from "./components/Header";
 
-import './global.css';
+import styles from "./App.module.css";
+
+import "./global.css";
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
     <div>
       <Header />
-      <h1>Hello world</h1>
+
+      <div className={styles.wrapper}>
+        <SideBar />
+        <main>
+          <div>post</div>
+        </main>
+      </div>
     </div>
   );
 }
